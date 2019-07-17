@@ -51,7 +51,8 @@ function AS5047D (interval){
  AS5047D.prototype.stop = function(){
  clearInterval(i);
 };
-
+AS5047D.prototype.pos = function() {
+ return pos};
 
 
 
@@ -72,9 +73,6 @@ a16 = (a[1]+(a[0]<<8)) & 0x3FFF;
   //
   pos += dif ;  //return absolut angel
 }
-
-AS5047D.prototype.pos = function {
- return pos};
 
 exports.connect = function (interval){
   if(interval === undefined ){ interval = 1000;}
