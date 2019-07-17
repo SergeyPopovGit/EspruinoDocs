@@ -73,6 +73,7 @@ a16 = (a[1]+(a[0]<<8)) & 0x3FFF;
   a16_= a16;   
   //
   pos += dif ;  //return absolut angel
+  print(pos);
 }
 
 
