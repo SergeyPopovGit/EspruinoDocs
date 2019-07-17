@@ -52,7 +52,8 @@ function AS5047D (interval){
  clearInterval(i);
 };
 AS5047D.prototype.pos = function() {
- return pos};
+ return pos;
+};
 
 
 
