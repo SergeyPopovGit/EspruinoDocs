@@ -38,6 +38,7 @@ var
     dif,
 
     i ; 
+
 AS5047D.prototype.pos = 0;
 
 function AS5047D (interval){
@@ -71,8 +72,8 @@ a16 = (a[1]+(a[0]<<8)) & 0x3FFF;
   if (dif > 0x1FFF){dif -=  0x3FFF;} 
   a16_= a16;   
   //
-  pos += dif ;  //return absolut angel
-  print(pos);
+  this.pos += dif ;  //return absolut angel
+  print(this.pos);
 }
 
 
