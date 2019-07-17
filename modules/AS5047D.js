@@ -36,9 +36,9 @@ var
     a16=0,
     a16_=0 ,
     dif,
-    pos=0,
-    i ; 
 
+    i ; 
+AS5047D.prototype.pos = 0;
 
 function AS5047D (interval){
     //inint SPI interface
@@ -53,7 +53,6 @@ function AS5047D (interval){
  clearInterval(i);
 };
 
-AS5047D.prototype.pos = this.pos;
 
 
 
