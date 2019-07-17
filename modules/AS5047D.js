@@ -36,10 +36,8 @@ var
     a16=0,
     a16_=0 ,
     dif,
-
+    pos,
     i ; 
-
-AS5047D.prototype.pos = 0;
 
 function AS5047D (interval){
     //inint SPI interface
@@ -72,11 +70,11 @@ a16 = (a[1]+(a[0]<<8)) & 0x3FFF;
   if (dif > 0x1FFF){dif -=  0x3FFF;} 
   a16_= a16;   
   //
-  this.pos += dif ;  //return absolut angel
-  print(this.pos);
+  pos += dif ;  //return absolut angel
 }
 
-
+AS5047D.prototype.pos = function {
+ return pos};
 
 exports.connect = function (interval){
   if(interval === undefined ){ interval = 1000;}
