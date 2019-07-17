@@ -53,6 +53,8 @@ function AS5047D (interval){
  clearInterval(i);
 };
 
+AS5047D.prototypr.pos = pos;
+
 
 
 //read and update encoder value
